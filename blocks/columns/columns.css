@@ -35,16 +35,13 @@
 /* thirds variant */
 .columns.thirds > div {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .columns.thirds > div > div.columns-img-col img {
   max-width: 352px;
   padding-right: var(--default-content-gap);
   margin: auto;
-}
-
-.columns.thirds > div {
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .columns.thirds > div > div {
