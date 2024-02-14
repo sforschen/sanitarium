@@ -12,7 +12,7 @@ header nav {
     'hamburger brand tools' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
-  gap: 0 calc(var(--default-content-gap) * 2);
+  gap: 0 var(--default-content-gap);
   margin: auto;
   max-width: 960px;
   height: var(--nav-height);
@@ -140,21 +140,22 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 300px;
+  flex-basis: auto;
   font-size: var(--heading-font-size-m);
-  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--clr-white);
   line-height: 1;
 }
 
 header nav .nav-brand img {
-  width: 300px;
+  width: 420px;
   height: auto;
 }
 
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
-  flex: 1 1 auto;
+  flex: 1 auto auto;
   display: none;
   visibility: hidden;
   background-color: var(--overlay-color);
@@ -170,23 +171,26 @@ header nav .nav-sections ul  {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-m);
-  font-weight: 700;
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 700;
   color: var(--clr-white);
-  background-color: var(--clr-green);
-  padding: calc(var(--default-content-gap) * .25) var(--default-content-gap);
-  border-radius: var(--default-content-gap);
+  padding-right: var(--default-content-gap);
+  border-right: 2px solid var(--clr-white);
 }
 
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
 }
 
-header nav .nav-sections ul > li > ul > li {
-  font-weight: 700;
+header nav .nav-sections ul > li:hover {
+  color: var(--clr-green);
+  padding-right: var(--default-content-gap);
+  border-right: 2px solid var(--clr-white);
+}
+
+header nav .nav-sections ul > li:last-child {
+  border-right: 0;
 }
 
 @media (width >= 900px) {
@@ -236,7 +240,6 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
-    font-weight: 700;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
