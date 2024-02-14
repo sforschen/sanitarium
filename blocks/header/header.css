@@ -31,7 +31,7 @@ header nav[aria-expanded="true"] {
 
 @media (width >= 600px) {
   header nav {
-    padding: 0 var(--default-content-gap);
+    padding: var(--default-content-gap);
   }
 }
 
@@ -144,7 +144,6 @@ header .nav-brand {
   font-size: var(--heading-font-size-m);
   font-weight: 700;
   line-height: 1;
-  padding: var(--default-content-gap) 0;
 }
 
 header nav .nav-brand img {
