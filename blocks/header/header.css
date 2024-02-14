@@ -13,7 +13,7 @@ header nav {
     'hamburger brand tools' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
-  gap: 0 var(--default-content-gap);
+  gap: 0 calc(var(--default-content-gap) * 2);
   margin: auto;
   max-width: 960px;
   height: var(--nav-height);
@@ -60,7 +60,7 @@ header nav a:any-link {
 /* hamburger */
 header nav .nav-hamburger {
   grid-area: hamburger;
-  height: 22px;
+  height: 24px;
   display: flex;
   align-items: center;
 }
@@ -84,7 +84,7 @@ header nav .nav-hamburger-icon::after {
   box-sizing: border-box;
   display: block;
   position: relative;
-  width: 20px;
+  width: 24px;
 }
 
 header nav .nav-hamburger-icon::before,
@@ -111,7 +111,7 @@ header nav[aria-expanded="false"] .nav-hamburger-icon::after {
 }
 
 header nav[aria-expanded="true"] .nav-hamburger-icon {
-  height: 22px;
+  height: 24px;
 }
 
 header nav[aria-expanded="true"] .nav-hamburger-icon::before,
@@ -145,6 +145,7 @@ header .nav-brand {
   font-size: var(--heading-font-size-m);
   font-weight: 700;
   line-height: 1;
+  padding: var(--default-content-gap) 0;
 }
 
 header nav .nav-brand img {
@@ -171,12 +172,15 @@ header nav .nav-sections ul  {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-m);
-  font-weight: 400;
+  font-weight: 700;
 }
 
 header nav .nav-sections ul > li {
   font-weight: 700;
   color: var(--clr-white);
+  background-color: var(--clr-green);
+  padding: calc(var(--default-content-gap) * .25) var(--default-content-gap);
+  border-radius: var(--default-content-gap);
 }
 
 header nav .nav-sections ul > li > ul {
@@ -184,7 +188,7 @@ header nav .nav-sections ul > li > ul {
 }
 
 header nav .nav-sections ul > li > ul > li {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @media (width >= 900px) {
@@ -234,7 +238,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {

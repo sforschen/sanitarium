@@ -60,7 +60,7 @@
   --spc-xs: .5rem;
 
   /* nav height */
-  --nav-height: 120px;
+  --nav-height: auto;
 }
 
 @font-face {
