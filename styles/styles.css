@@ -70,17 +70,6 @@
   src: local('Arial');
 }
 
-@media (width >= 900px) {
-  :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
-  }
-}
-
 body {
   font-size: var(--body-font-size-m);
   margin: 0;
@@ -111,7 +100,7 @@ h4, h5, h6 {
   text-wrap: balance;
 }
 
-h1 { font-size: var(--heading-font-size-l) }
+h1 { font-size: var(--heading-font-size-xl) }
 h2 { font-size: var(--heading-font-size-m) }
 h3 { font-size: var(--heading-font-size-s) }
 h4 { font-size: var(--heading-font-size-xs) }
