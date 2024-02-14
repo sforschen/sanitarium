@@ -89,6 +89,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  text-wrap: pretty;
 }
 
 body.appear {
@@ -103,10 +104,10 @@ h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
-  line-height: 1.25;
-  margin-top: 1em;
+  line-height: 1;
   margin-bottom: .5em;
   scroll-margin: calc(var(--nav-height) + 1em);
+  text-wrap: balance;
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
@@ -209,18 +210,18 @@ main img {
 
 /* sections */
 main .section {
-  padding: 48px;
+  padding: var(--default-content-gap);
 }
 
 @media (width >= 600px) {
   main .section {
-    padding: 48px;
+    padding: var(--default-content-gap);
   }
 }
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 960px;
+    max-width: 916px;
     margin: auto;
   }
 }

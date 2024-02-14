@@ -13,11 +13,11 @@ header nav {
     'hamburger brand tools' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
-  gap: 0 3em;
+  gap: 0 var(--default-content-gap);
   margin: auto;
   max-width: 960px;
   height: var(--nav-height);
-  padding: 0 1rem;
+  padding: var(--default-content-gap);
   font-family: var(--body-font-family);
 }
 
@@ -32,7 +32,7 @@ header nav[aria-expanded="true"] {
 
 @media (width >= 600px) {
   header nav {
-    padding: 0 2rem;
+    padding: 0 var(--default-content-gap);
   }
 }
 
