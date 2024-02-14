@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  background-color: var(--clr-blue);
 }
 
 header nav {
@@ -27,7 +28,7 @@ header nav[aria-expanded="true"] {
     'sections sections' 1fr
     'tools tools' var(--nav-height) / auto 1fr;
   overflow-y: auto;
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 @media (width >= 600px) {
@@ -171,11 +172,12 @@ header nav .nav-sections ul  {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-m);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 header nav .nav-sections ul > li {
   font-weight: 700;
+  color: var(--clr-white);
 }
 
 header nav .nav-sections ul > li > ul {
@@ -183,7 +185,7 @@ header nav .nav-sections ul > li > ul {
 }
 
 header nav .nav-sections ul > li > ul > li {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media (width >= 900px) {
@@ -233,7 +235,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {

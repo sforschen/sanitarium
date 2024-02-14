@@ -23,7 +23,7 @@
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    gap: var(--default-content-gap);
   }
 
   .columns > div > div {

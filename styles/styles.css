@@ -123,6 +123,14 @@ p, dl, ol, ul, pre, blockquote {
   margin-bottom: var(--default-content-gap);
 }
 
+p:first-child {
+  margin-top: 0;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
 code, pre {
   font-family: var(--fixed-font-family);
   font-size: var(--body-font-size-s);
@@ -162,18 +170,18 @@ a.button:any-link, button {
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 30px;
+  padding: calc(var(--default-content-gap) * .25) var(--default-content-gap);
   text-align: center;
   font-style: normal;
   font-weight: 700;
   cursor: pointer;
   color: var(--background-color);
   background-color: var(--link-color);
-  margin: 16px 0;
+  margin: calc(var(--default-content-gap) * .25) 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: var(--default-content-gap);
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
