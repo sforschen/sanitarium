@@ -1,9 +1,9 @@
 /* header and nav layout */
 header .nav-wrapper {
+  background-color: var(--clr-blue);
   width: 100%;
   z-index: 2;
   position: fixed;
-  background-color: var(--clr-blue);
 }
 
 header nav {
