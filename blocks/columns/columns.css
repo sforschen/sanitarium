@@ -1,33 +1,179 @@
+/* stylelint-disable no-descending-specificity */
+
 .columns > div {
   display: flex;
   flex-direction: column;
 }
 
+.columns > div > div[data-align='center'] {
+  text-align: center;
+}
+
 .columns img {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.columns > div > div {
-  order: 1;
+.columns.icons img {
+  max-width: 25px;
+  margin: 0 5px;
 }
 
-.columns > div > .columns-img-col {
-  order: 0;
+
+
+.columns .columns-img-col {
+  position: relative;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.columns.teaser .columns-img-col {
+  display: flex;
+}
+
+@media (max-width: 56.25em) {
+  .columns > div > div {
+    order: 1;
+  }
+
+  .columns > div > div.columns-img-col {
+    order: 0;
+    margin-bottom: var(--default-content-gap);
+  }
 }
 
 .columns > div > .columns-img-col img {
   display: block;
 }
 
-@media (width >= 900px) {
+@media (min-width: 37.5em) {
   .columns > div {
-    align-items: center;
+    align-items: stretch;
     flex-direction: unset;
-    gap: var(--default-content-gap);
+    gap: 20px;
   }
 
   .columns > div > div {
     flex: 1;
-    order: unset;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .columns > div {
+    gap: var(--default-content-gap);
+  }
+}
+
+/* thirds variant */
+
+.columns.thirds > div {
+  display: grid;
+}
+
+.columns.thirds > div > div.columns-img-col img {
+  max-width: 352px;
+  margin: auto;
+}
+
+@media (min-width: 56.25em) {
+  .columns.thirds > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .columns.thirds > div > div {
+    grid-column: span 2;
+  }
+  
+  .columns.thirds > div > div.columns-img-col,
+  .columns.thirds > div > div:not(.columns-img-col):first-child + div:not(.columns-img-col) {
+    grid-column: span 1;
+  }
+}
+
+/* teaser variant */
+@media screen and (max-width: 36em) {
+  .bubble {
+      transform: scale(.6);
+  }
+}
+
+.columns.thirds.teaser .columns-img-col picture {
+  z-index: 5;
+  position: relative;
+}
+
+.columns.thirds.teaser > div > div.columns-img-col img {
+  border-radius: 50%;
+}
+
+.columns.thirds.teaser .columns-img-col div.teaser-wrapper {
+  display: block;
+  position: relative;
+  max-width: 352px;
+  max-height: 352px;
+  margin: auto;
+}
+
+/* grey variant */
+
+.columns.grey > div {
+  gap: var(--default-content-gap);
+}
+
+.columns.grey > div > div {
+  background-color: var(--clr-off-white);
+  padding: 24px;
+  min-height: 145px;
+  border-radius: 8px;
+}
+
+.columns.grey h2 {
+  font-weight: bold;
+  font-size: var(--heading-font-size-m);
+  line-height: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.grey p {
+  margin: 0 0 16px;
+}
+
+/* fifths variant */
+
+.columns.fifths > div {
+  gap: var(--default-content-gap);
+  margin-bottom: var(--default-content-gap);
+}
+
+@media (min-width: 37.5em) {
+  .columns.fifths > div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .columns.fifths img {
+    max-width: 196px;
+  }
+
+  .columns.fifths > div > div {
+    grid-column: span 4;
+  }
+
+  .columns.fifths > div > div.columns-img-col {
+    text-align: center;
+    grid-column: span 1;
+  }
+
+  .columns.fifths > div > div.columns-img-col img {
+    margin: 0 auto;
+  }
+
+}
+
+/* normally image on mobile view is on the top, but some variant shows at bottom */
+@media (max-width: 56.25em) {
+  .columns.image-bottom > div > div.columns-img-col {
+    order: 2;
   }
 }

@@ -51,7 +51,7 @@
   --heading-font-size-xs: 1.125rem; /* 18px */
 
   /* misc. */
-  --max-content-width: 90rem;      /* 1440px */
+  --max-content-width: 60rem;      /* 960px */
   --default-content-gap: 24px;
   --spc-xl: 3rem;
   --spc-l: 2rem;
@@ -92,7 +92,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
   margin-bottom: var(--default-content-gap);
   margin-top: 0;
