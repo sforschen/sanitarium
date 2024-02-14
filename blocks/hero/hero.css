@@ -1,9 +1,10 @@
 main .hero-container > div {
-  max-width: unset;
+  max-width: 960px;
 }
   
 main .hero-container {
   padding: 0;
+  background-color: var(--clr-blue);
 }
 
 .hero {
@@ -13,7 +14,7 @@ main .hero-container {
 }
 
 .hero h1 {
-  max-width: 1200px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   color: white;
