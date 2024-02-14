@@ -15,7 +15,7 @@
   --link-color: var(--clr-green);
   --link-hover-color: var(--clr-light-blue);
   --background-color: var(--clr-white);
-  --light-color: #eee;
+  --light-color: var(--clr-lighter-blue);
   --dark-color: #ccc;
   --text-color: var(--clr-black);
   --clr-black: #0B0B0B;
@@ -31,16 +31,16 @@
   --clr-white: #fff;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: "futura-pt", sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family: "futura-pt", sans-serif;
 
   /* body sizes */
-  --body-font-size-xl: 1.5rem;  /* 24px */
-  --body-font-size-l: 1.25rem;  /* 20px */
-  --body-font-size-m: 1.125rem; /* 18px */
+  --body-font-size-xl: 1.75rem;  
+  --body-font-size-l: 1.5rem;  
+  --body-font-size-m: 1.25rem; 
   --body-font-size-s: 1rem;     /* 16px */
-  --body-font-size-xs: 0.75rem; /* 12px */
+  --body-font-size-xs: 0.75rem; 
 
   /* heading sizes */
   --heading-font-size-xxl: 3.5rem;  /* 56px */
@@ -105,21 +105,22 @@ h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
   line-height: 1;
-  margin-bottom: .5em;
+  margin-bottom: var(--default-content-gap);
+  margin-top: 0;
   scroll-margin: calc(var(--nav-height) + 1em);
   text-wrap: balance;
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
+h1 { font-size: var(--heading-font-size-l) }
+h2 { font-size: var(--heading-font-size-m) }
+h3 { font-size: var(--heading-font-size-s) }
+h4 { font-size: var(--heading-font-size-xs) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
 p, dl, ol, ul, pre, blockquote {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: var(--default-content-gap);
 }
 
 code, pre {
@@ -164,7 +165,7 @@ a.button:any-link, button {
   padding: 5px 30px;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   color: var(--background-color);
   background-color: var(--link-color);
