@@ -17,9 +17,25 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+  max-width: fit-content;
+  margin: auto;
 }
 
-@media (width >= 900px) {
+/* thirds variant */
+.columns.thirds > div {
+  display: flex;
+}
+
+.columns.thirds > div > div {
+  grid-column: span 2;
+}
+  
+.columns.thirds > div > div.columns-img-col,
+.columns.thirds > div > div:not(.columns-img-col):first-child + div:not(.columns-img-col) {
+    grid-column: span 1;
+}
+
+@media (width >= 792px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
@@ -30,25 +46,8 @@
     flex: 1;
     order: unset;
   }
-}
-
-/* thirds variant */
-.columns.thirds > div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.columns.thirds > div > div.columns-img-col img {
-  max-width: 352px;
-  padding-right: var(--default-content-gap);
-  margin: auto;
-}
-
-.columns.thirds > div > div {
-  grid-column: span 2;
-}
-  
-.columns.thirds > div > div.columns-img-col,
-.columns.thirds > div > div:not(.columns-img-col):first-child + div:not(.columns-img-col) {
-    grid-column: span 1;
+  .columns.thirds > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
