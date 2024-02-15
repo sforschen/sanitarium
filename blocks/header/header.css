@@ -156,7 +156,7 @@ header nav .nav-brand img {
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
-  flex: 1 1 auto;
+  flex: 1 auto 1;
   display: none;
   visibility: hidden;
   background-color: var(--overlay-color);
