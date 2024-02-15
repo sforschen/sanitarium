@@ -1,15 +1,5 @@
 footer {
-  padding: var(--default-content-gap);
+  padding: var(--spc-m);
   background-color: var(--light-color);
   font-size: var(--body-font-size-m);
-}
-
-footer .footer {
-  max-width: 960px;
-  margin: auto;
-}
-
-footer .footer p {
-  margin: 0;
-  display: block;
 }
