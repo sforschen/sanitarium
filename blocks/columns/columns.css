@@ -46,6 +46,7 @@
     flex: 1;
     order: unset;
   }
+  
   .columns.thirds > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
