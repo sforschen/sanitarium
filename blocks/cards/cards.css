@@ -36,8 +36,7 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  padding: var(--spc-m);
+  aspect-ratio: 2 / 1;
   object-fit: cover;
 }
 
