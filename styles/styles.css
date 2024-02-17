@@ -12,8 +12,8 @@
 
 :root {
   /* colors */
-  --link-color: var(--clr-green);
-  --link-hover-color: var(--clr-light-blue);
+  --link-color: var(--clr-light-blue);
+  --link-hover-color: var(--clr-orange);
   --background-color: var(--clr-white);
   --light-color: var(--clr-lighter-blue);
   --dark-color: #ccc;

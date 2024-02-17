@@ -178,7 +178,7 @@ header nav .nav-sections ul > li > ul {
 }
 
 header nav .nav-sections ul > li:hover {
-  color: var(--clr-green);
+  color: var(--clr-orange);
   padding-right: var(--spc-m);
   border-right: 2px solid var(--clr-white);
 }
