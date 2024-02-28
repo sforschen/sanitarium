@@ -1,0 +1,30 @@
+.k-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  grid-gap: var(--spc-m);
+}
+
+.k-cards > ul > li {
+  border: 1px solid var(--clr-black);
+  background-color: var(--background-color)
+}
+
+.k-cards .cards-card-body {
+  margin: var(--spc-m);
+}
+
+.k-cards .cards-card-image {
+  line-height: 0;
+}
+
+.k-cards .cards-card-body > *:first-child {
+  margin-top: 0;
+}
+
+.k-cards > ul > li img {
+  width: 100%;
+  object-fit: cover;
+}

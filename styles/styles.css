@@ -155,18 +155,19 @@ a:hover {
 /* buttons */
 a.button:any-link, button {
   font-family: var(--body-font-family);
+  line-height: 1;
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: calc(var(--default-content-gap) * .25) var(--default-content-gap);
+  padding: var(--spc-xs) var(--spc-m);
   text-align: center;
   font-style: normal;
   font-weight: 700;
   cursor: pointer;
   color: var(--background-color);
   background-color: var(--link-color);
-  margin: calc(var(--default-content-gap) * .25) 0;
+  margin: var(--spc-xs) 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -185,8 +186,14 @@ button:disabled, button:disabled:hover {
 
 a.button.secondary, button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color)
+  border: 2px solid var(--clr-orange);
+  color: var(--clr-orange)
+}
+
+a.button.secondary:hover, button.secondary:hover {
+  background-color: var(--clr-light-orange);
+  border: 2px solid var(--clr-orange);
+  color: var(--clr-orange)
 }
 
 main img {
@@ -228,4 +235,8 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+main .section.highlight-2 {
+  background-color: var(--light-green);
 }

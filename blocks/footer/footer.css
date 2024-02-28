@@ -2,4 +2,5 @@ footer {
   padding: var(--spc-m);
   background-color: var(--light-color);
   font-size: var(--body-font-size-m);
+  text-align: center;
 }
