@@ -18,13 +18,9 @@
 
 .k-cards .cards-card-image {
   line-height: 0;
+
 }
 
 .k-cards .cards-card-body > *:first-child {
   margin-top: 0;
-}
-
-.k-cards > ul > li img {
-  width: 100%;
-  object-fit: cover;
 }
