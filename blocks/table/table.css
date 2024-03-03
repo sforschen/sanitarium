@@ -6,7 +6,7 @@
   .table .button {
     line-height: unset !important;
     display: unset !important ;
-    text-decoration: underline !important;
+    text-decoration: none !important;
     border: unset !important;
     padding: 0 !important;
     font-weight: 400 !important;
@@ -14,6 +14,9 @@
     background-color: unset !important;
     border-radius: unset !important;
     color: var(--clr-light-blue) !important;
+  }
+  .table .button:hover {
+    color: var(--clr-orange) !important;
   }
   
   .table table {

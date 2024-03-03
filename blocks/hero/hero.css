@@ -35,3 +35,14 @@ main .hero-container {
   display: block;
   margin: auto;
 }
+
+@media (width <= 792px) {
+  .hero img {
+    display: none;
+  }
+
+  .hero {
+    height: 0;
+  }
+  
+}

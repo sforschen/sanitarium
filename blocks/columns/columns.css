@@ -24,6 +24,7 @@
 /* thirds variant */
 .columns.thirds > div {
   display: flex;
+  gap: var(--default-content-gap);
 }
 
 .columns.thirds > div > div {

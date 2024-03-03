@@ -152,6 +152,10 @@ a:hover {
   color: var(--link-hover-color);
 }
 
+h2 a {
+color: var(--clr-black) !important;
+}
+
 /* buttons */
 a.button:any-link, button {
   font-family: var(--body-font-family);
@@ -237,6 +241,10 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
-main .section.highlight-2 {
-  background-color: var(--light-green);
+main .section.highlight-light-green {
+  background-color: var(--clr-light-green);
+}
+
+main .section.highlight-red {
+  background-color: var(--clr-redred);
 }
