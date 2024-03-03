@@ -55,9 +55,3 @@
   .table.striped tbody tr:nth-child(odd) {
     background-color: var(--overlay-background-color);
   }
-  
-  /* hover variant */
-  .table table tbody tr:hover {
-    border-bottom: 1px solid;
-    background-color: var(--clr-light-green);
-  }
