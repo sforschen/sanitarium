@@ -178,12 +178,6 @@ export function decorateLinks(element) {
       if (a.href) {
         const url = new URL(a.href);
 
-        if (url.pathname.startsWith('/hubfs/')) {
-          // link to hubspot, rewrite hostname and reprocess
-          url.hostname = 'page.elixirsolutions.com';
-          a.href = url.toString();
-        }
-
         // check of link needs to display file type
         const displayFileType = getDisplayFileTypeFromUrl(a.href);
         if (displayFileType) {
