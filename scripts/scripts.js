@@ -172,7 +172,7 @@ function getDisplayFileTypeFromUrl(url) {
 }
 
 export function decorateLinks(element) {
-  const hosts = ['localhost', 'hlx.page', 'hlx.live', ...PRODUCTION_DOMAINS];
+  const hosts = ['localhost', 'hlx.page', 'hlx.live'];
   element.querySelectorAll('a').forEach((a) => {
     try {
       if (a.href) {
