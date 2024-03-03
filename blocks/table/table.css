@@ -15,6 +15,7 @@
     border-radius: unset !important;
     color: var(--clr-light-blue) !important;
   }
+  
   .table .button:hover {
     color: var(--clr-orange) !important;
   }

@@ -142,6 +142,10 @@ main pre {
 }
 
 /* links */
+h2 a {
+  color: var(--clr-black) !important;
+  }
+
 a:any-link {
   color: var(--link-color);
   text-decoration: none;
@@ -150,10 +154,6 @@ a:any-link {
 a:hover {
   text-decoration: underline;
   color: var(--link-hover-color);
-}
-
-h2 a {
-color: var(--clr-black) !important;
 }
 
 /* buttons */
