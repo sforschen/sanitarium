@@ -1,6 +1,7 @@
 footer {
   padding: var(--spc-m);
-  background-color: var(--light-color);
+  background-color: var(--clr-blue);
   font-size: var(--body-font-size-m);
   text-align: center;
+  color: var(--clr-white);
 }

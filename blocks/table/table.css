@@ -1,6 +1,19 @@
-.table {
+  .table {
     width: 100%;
     overflow-x: auto;
+  }
+
+  .table .button {
+    line-height: unset !important;
+    display: unset !important ;
+    text-decoration: underline !important;
+    border: unset !important;
+    padding: 0 !important;
+    font-weight: 400 !important;
+    cursor: pointer;
+    background-color: unset !important;
+    border-radius: unset !important;
+    color: var(--clr-light-blue) !important;
   }
   
   .table table {
@@ -45,7 +58,7 @@
     padding: var(--spc-xs) var(--spc-xs);
     text-align: left;
   }
-  
+ 
   /* no header variant */
   .table.no-header table tbody tr {
     border-top: 1px solid var(--clr-green);
