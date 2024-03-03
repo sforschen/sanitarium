@@ -196,11 +196,6 @@ a.button.secondary:hover, button.secondary:hover {
   color: var(--clr-orange)
 }
 
-.icon-external-link {
-  height: .75em;
-  width: 1.25em;
-}
-
 main img {
   max-width: 100%;
   width: auto;

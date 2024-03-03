@@ -94,12 +94,35 @@ function buildAutoBlocks(main) {
   }
 }
 
+/**
+ * inspects the url, if url has a special file type return the file type, otherwise return null
+ *
+ * Note: urls to non-HTML files should display the file type in the hyperlink
+ * This way users know they are downloading a file.
+ * @param {string} url the url that may or may not link to a display file type
+ */
+function getDisplayFileTypeFromUrl(url) {
+  const displayFileTypes = ['pdf', 'docx'];
+  const urlExt = url.substring(url.lastIndexOf('.'));
+  const regex = new RegExp(`(${displayFileTypes.join('|')})`, 'g');
+
+  const fileTypeArr = urlExt.toLowerCase().match(regex);
+  return (fileTypeArr && fileTypeArr.length) ? fileTypeArr[0].toUpperCase() : null;
+}
+
 export function decorateLinks(element) {
   const hosts = ['localhost', 'hlx.page', 'hlx.live'];
   element.querySelectorAll('a').forEach((a) => {
     try {
       if (a.href) {
         const url = new URL(a.href);
+
+        // check of link needs to display file type
+        const displayFileType = getDisplayFileTypeFromUrl(a.href);
+        if (displayFileType) {
+          a.innerText += ` (${displayFileType})`;
+          a.target = '_blank';
+        }
 
         // local links are relative
         // non local and non email links open in a new tab
@@ -111,8 +134,7 @@ export function decorateLinks(element) {
         } else if (!emailMatch) {
           a.target = '_blank';
           a.rel = 'noopener noreferrer';
-          const icon = createElement('span', ['icon', 'icon-external-link']);
-          a.insertAdjacentElement('beforeend', icon);
+          a.innerHTML += ` &#10064;`;
           const linkTitle = a.title;
           a.title = linkTitle ? `${linkTitle} (opens an external site)` : 'Link opens an external site';
         }
