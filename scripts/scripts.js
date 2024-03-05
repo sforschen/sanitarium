@@ -134,7 +134,7 @@ export function decorateLinks(element) {
         } else if (!emailMatch) {
           a.target = '_blank';
           a.rel = 'noopener noreferrer';
-          a.innerHTML += ' &#10064;';
+          a.innerHTML += ' &#8599;';
           const linkTitle = a.title;
           a.title = linkTitle ? `${linkTitle} (opens an external site)` : 'Link opens an external site';
         }
