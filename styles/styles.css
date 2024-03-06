@@ -166,17 +166,17 @@ a.button:any-link, button {
   text-decoration: none;
   border: 2px solid transparent;
   padding: var(--spc-xs) var(--spc-m);
+  height: var();
   text-align: center;
   font-style: normal;
   font-weight: 700;
   cursor: pointer;
   color: var(--background-color);
   background-color: var(--link-color);
-  margin: var(--spc-xs) 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: var(--default-content-gap);
+  border-radius: var(--spc-xl);
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {

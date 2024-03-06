@@ -21,6 +21,13 @@
   margin: auto;
 }
 
+/* centered variant */
+.columns.center > div > div {
+  display: block;
+  max-width: fit-content;
+  margin: auto;
+}
+
 /* thirds variant */
 .columns.thirds > div {
   display: flex;
