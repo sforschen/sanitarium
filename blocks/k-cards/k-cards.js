@@ -17,13 +17,13 @@ function getPercentageValue(text) {
 function getBackgroundColor(percentageValue) {
   if (percentageValue >= 0 && percentageValue <= 20) {
     return 'var(--clr-blue)';
-  } else if (percentageValue > 20 && percentageValue <= 40) {
+  } if (percentageValue > 20 && percentageValue <= 40) {
     return 'var(--clr-red)';
-  } else if (percentageValue > 40 && percentageValue <= 60) {
+  } if (percentageValue > 40 && percentageValue <= 60) {
     return 'var(--clr-orange)';
-  } else if (percentageValue > 60 && percentageValue <= 80) {
+  } if (percentageValue > 60 && percentageValue <= 80) {
     return 'var(--clr-light-blue)';
-  } else (percentageValue > 80 && percentageValue <= 100) {
+  } if (percentageValue > 80 && percentageValue <= 100) {
     return 'var(--clr-green)';
   }
 }
