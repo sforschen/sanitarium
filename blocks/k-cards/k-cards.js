@@ -23,7 +23,7 @@ function getBackgroundColor(percentageValue) {
     return 'var(--clr-orange)';
   } else if (percentageValue > 60 && percentageValue <= 80) {
     return 'var(--clr-light-blue)';
-  } else if (percentageValue > 80 && percentageValue <= 100) {
+  } else (percentageValue > 80 && percentageValue <= 100) {
     return 'var(--clr-green)';
   }
 }
