@@ -40,7 +40,7 @@ export default function decorate(block) {
       } else if (containsNumberPercentage(div.textContent)) {
         const percentageValue = getPercentageValue(div.textContent);
         div.className = 'skills-container';
-        div.style.width = percentageValue + '%';
+        div.style.width = `${percentageValue}%`;
         div.style.backgroundColor = getBackgroundColor(percentageValue);
       } else {
         div.className = 'cards-card-body';
