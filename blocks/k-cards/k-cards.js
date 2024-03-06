@@ -25,7 +25,6 @@ function getBackgroundColor(percentageValue) {
     return 'var(--clr-light-blue)';
   } 
     return 'var(--clr-green)';
-  }
 }
 
 export default function decorate(block) {
