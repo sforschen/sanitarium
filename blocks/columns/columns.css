@@ -30,17 +30,17 @@
 .columns.thirds > div > div {
   grid-column: span 2;
 }
-  
-.columns.thirds > div > div.columns-img-col,
-.columns.thirds > div > div:not(.columns-img-col):first-child + div:not(.columns-img-col) {
-    grid-column: span 1;
-}
 
 /* centered variant */
 .columns.center > div > div {
   display: block;
   max-width: fit-content;
   margin: auto;
+}
+  
+.columns.thirds > div > div.columns-img-col,
+.columns.thirds > div > div:not(.columns-img-col):first-child + div:not(.columns-img-col) {
+    grid-column: span 1;
 }
 
 @media (width >= 792px) {
