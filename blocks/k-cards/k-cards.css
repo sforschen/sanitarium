@@ -35,5 +35,6 @@
   padding-bottom: var(--spc-xs); 
   padding-left: var(--spc-s);
   border-radius: 0 var(--spc-l) var(--spc-l) 0;
+  margin-bottom: var(--spc-m);
   color: var(--clr-white); 
 }
