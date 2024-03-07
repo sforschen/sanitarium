@@ -15,13 +15,13 @@ function getPercentageValue(text) {
 
 // Function to get the background color based on the percentage value
 function getBackgroundColor(percentageValue) {
-  if (percentageValue >= 0 && percentageValue <= 20) {
+  if (percentageValue >= 0 && percentageValue <= 25) {
     return 'var(--clr-blue)';
-  } if (percentageValue > 20 && percentageValue <= 40) {
+  } if (percentageValue > 25 && percentageValue <= 45) {
     return 'var(--clr-red)';
-  } if (percentageValue > 40 && percentageValue <= 60) {
+  } if (percentageValue > 45 && percentageValue <= 65) {
     return 'var(--clr-orange)';
-  } if (percentageValue > 60 && percentageValue <= 80) {
+  } if (percentageValue > 65 && percentageValue <= 85) {
     return 'var(--clr-light-blue)';
   }
   return 'var(--clr-green)';

@@ -34,5 +34,6 @@
   padding-top: var(--spc-xs); 
   padding-bottom: var(--spc-xs); 
   padding-left: var(--spc-s);
+  border-radius: 0 var(--spc-l) var(--spc-l) 0;
   color: var(--clr-white); 
 }

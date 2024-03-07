@@ -29,7 +29,7 @@
   
   @media (width >= 600px) {
     .table table {
-      font-size: var(--body-font-size-s);
+      font-size: var(--body-font-size-m);
     }
   }
   
