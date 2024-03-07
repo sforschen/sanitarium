@@ -29,12 +29,10 @@
 .skills-container {
   box-sizing: border-box;
   width: 100%; 
-  text-align: right;
   font-weight: 700;
   background-color: var(--clr-light-blue); 
   padding-top: var(--spc-xs); 
   padding-bottom: var(--spc-xs); 
-  padding-right: var(--spc-s);
+  padding-left: var(--spc-s);
   color: var(--clr-white); 
 }
-
