@@ -75,7 +75,7 @@ body {
   font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
-  line-height: 1.5;
+  line-height: 1.75;
   color: var(--text-color);
   background-color: var(--background-color);
   text-wrap: pretty;
@@ -166,7 +166,6 @@ a.button:any-link, button {
   text-decoration: none;
   border: 2px solid transparent;
   padding: var(--spc-xs) var(--spc-m);
-  height: var();
   text-align: center;
   font-style: normal;
   font-weight: 700;

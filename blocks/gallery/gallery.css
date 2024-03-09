@@ -1,20 +1,9 @@
-@media (width >= 900px) {
-  .section.gallery-container > div {
-    max-width: 2560px !important;
-  }
-
-  .section.gallery-container > div:first-child {
-    max-width: 916px !important;
-    text-align: center;
-  }
-}
-
 .gallery > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
   grid-gap: var(--spc-m);
 }
 
