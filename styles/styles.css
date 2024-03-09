@@ -245,6 +245,24 @@ main .section.highlight-light-green {
   background-color: var(--clr-light-green);
 }
 
+main .section.highlight-light-grey-center {
+  background-color: var(--clr-light-grey);
+}
+
+main .section.highlight-light-grey-center > div > p > picture > img {
+  display: block;
+  margin: auto;
+}
+
 main .section.highlight-red {
   background-color: var(--clr-redred);
+}
+
+main .section.highlight-white-center {
+  background-color: var(--clr-white);
+}
+
+main .section.highlight-white-center > div > p > picture > img {
+  display: block;
+  margin: auto;
 }
