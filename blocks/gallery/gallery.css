@@ -44,9 +44,7 @@
 }
 
 .gallery .gallery-card-image {
-  background-color: var(--clr-light-grey);
   line-height: 0;
-  padding: var(--spc-m);
 }
 
 .gallery .gallery-card-body > *:first-child {
