@@ -25,11 +25,7 @@
 }
 
 .gallery .gallery-card-body {
-  margin: var(--spc-m);
-}
-
-.gallery .gallery-card-body:hover {
-  margin: var(--spc-m);
+  margin: var(--spc-xs) var(--spc-s);
 }
 
 .gallery .gallery-card-image {
