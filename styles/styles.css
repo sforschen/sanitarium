@@ -117,8 +117,8 @@ p:first-child {
   margin-top: 0;
 }
 
-p:last-child, ol:last-child{
-  margin-bottom: 0;
+p:last-child, ol:last-child {
+  margin-bottom: -8px;
 }
 
 code, pre {
