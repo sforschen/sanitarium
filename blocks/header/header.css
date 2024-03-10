@@ -154,6 +154,10 @@ header nav .nav-brand img {
   height: auto;
 }
 
+#nav > div.section.nav-brand > div > p {
+  margin-bottom: 0;
+}
+
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
