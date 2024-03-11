@@ -37,7 +37,7 @@
   max-width: fit-content;
   margin: auto;
 }
-  
+ 
 .columns.thirds > div > div.columns-img-col,
 .columns.thirds > div > div:not(.columns-img-col):first-child + div:not(.columns-img-col) {
     grid-column: span 1;

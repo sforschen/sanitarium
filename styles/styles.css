@@ -121,6 +121,10 @@ p:last-child, ol:last-child {
   margin-bottom: -8px;
 }
 
+h1:only-child {
+  margin-bottom: 0;
+}
+
 code, pre {
   font-family: var(--fixed-font-family);
   font-size: var(--body-font-size-s);
