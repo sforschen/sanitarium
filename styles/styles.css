@@ -223,10 +223,10 @@ main img {
 
 /* sections */
 main .section {
-  padding: var(--default-content-gap);
+  padding: var(--spc-m);
 }
 
-@media (width >= 600px) {
+@media (width >= 768px) {
   main .section {
     padding: var(--default-content-gap);
   }
