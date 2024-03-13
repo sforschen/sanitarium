@@ -4,7 +4,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
-  grid-gap: var(--spc-s);
+  grid-gap: var(--spc-m);
 }
 
 .k-cards > ul > li {
