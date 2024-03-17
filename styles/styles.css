@@ -69,6 +69,7 @@
   size-adjust: 100.06%;
   ascent-override: 95%;
   src: local('Arial');
+  font-display: swap;
 }
 
 body {
