@@ -260,7 +260,7 @@ main .section.highlight-light-grey-center > div > p > picture > img {
 }
 
 main .section.highlight-red {
-  background-color: var(--clr-redred);
+  background-color: var(--clr-red);
 }
 
 main .section.highlight-white-center {
