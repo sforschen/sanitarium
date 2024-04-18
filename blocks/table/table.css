@@ -13,7 +13,7 @@
     cursor: pointer;
     background-color: unset !important;
     border-radius: unset !important;
-    color: var(--clr-light-blue) !important;
+    color: var(--clr-black) !important;
   }
   
   .table .button:hover {
