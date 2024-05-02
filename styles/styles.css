@@ -98,9 +98,8 @@ h4, h5, h6 {
   line-height: 1;
   margin-bottom: var(--spc-m);
   margin-top: 0;
-  scroll-margin: calc(var(--nav-height) + 1em);
-  text-wrap: balance;
   scroll-margin: var(--spc-xl);
+  text-wrap: balance;
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
