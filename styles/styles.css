@@ -117,8 +117,7 @@ p, dl, ol, ul, pre, blockquote {
 ul {
   list-style-type: disc;
   margin-left: var(--spc-xs);
-  margin-top: -16px;
-  margin-bottom: var(--spc-l);
+  margin-bottom: var(--spc-m);
 }
 
 p:first-child {
