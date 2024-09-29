@@ -27,6 +27,12 @@
   }
 }
 
+@media (width <= 959px) {
+  .cards > ul > li{
+    grid-column: 1 / span all ;
+  }
+}
+
 .cards > ul > li {
   border: 1px solid var(--clr-green);
   background-color: var(--background-color)
