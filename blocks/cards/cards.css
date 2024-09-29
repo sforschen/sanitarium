@@ -14,7 +14,11 @@
 
   .cards > ul > li:first-of-type + li{
     grid-column: 1 / span 2;
-  } 
+  }
+
+  .cards > ul > li:last-of-type{
+    grid-column: 1 / span 3;
+  }
 }
 
 .cards > ul > li {
