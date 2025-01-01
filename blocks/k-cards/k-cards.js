@@ -27,6 +27,40 @@ function getBackgroundColor(percentageValue) {
   return 'var(--clr-green)';
 }
 
+// Function to animate the width of the element
+function animateWidth(element, percentageValue) {
+  let start = 0;
+  const duration = 1000; // duration of the animation in milliseconds
+  const step = (timestamp) => {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    const width = Math.min((progress / duration) * percentageValue, percentageValue);
+    element.style.width = `${width}%`;
+    if (progress < duration) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+// Function to observe elements and animate when in view
+function observeElements() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const percentageValue = parseInt(element.getAttribute('data-percentage'), 10);
+        animateWidth(element, percentageValue);
+        observer.unobserve(element); // Stop observing once animated
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.skills-container').forEach((element) => {
+    observer.observe(element);
+  });
+}
+
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
@@ -39,7 +73,8 @@ export default function decorate(block) {
       } else if (containsNumberPercentage(div.textContent)) {
         const percentageValue = getPercentageValue(div.textContent);
         div.className = 'skills-container';
-        div.style.width = `${percentageValue}%`;
+        div.setAttribute('data-percentage', percentageValue);
+        div.style.width = '0%'; // Start with 0% width
         div.style.backgroundColor = getBackgroundColor(percentageValue);
       } else {
         div.className = 'cards-card-body';
@@ -50,4 +85,7 @@ export default function decorate(block) {
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
   block.append(ul);
+
+  // Observe elements for animation
+  observeElements();
 }
