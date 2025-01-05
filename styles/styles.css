@@ -37,11 +37,11 @@
   --fixed-font-family: "futura-pt", sans-serif;
 
   /* body sizes */
-  --body-font-size-xl: 1.75rem;  
-  --body-font-size-l: 1.5rem;  
-  --body-font-size-m: 1.25rem; 
-  --body-font-size-s: 1rem;     /* 16px */
-  --body-font-size-xs: 0.75rem; 
+  --body-font-size-xl: 2rem;  
+  --body-font-size-l: 1.75rem;  
+  --body-font-size-m: 1.5rem; 
+  --body-font-size-s: 1.25rem;     /* 16px */
+  --body-font-size-xs: 1rem; 
 
   /* heading sizes */
   --heading-font-size-xxl: 3rem;  /* 48px */
