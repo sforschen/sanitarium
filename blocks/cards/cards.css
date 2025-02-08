@@ -3,42 +3,8 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+  grid-template-rows: repeat(auto-fill);
   grid-gap: var(--spc-m);
-}
-
-@media (width >= 960px) {
-  .cards > ul > li:first-of-type{
-    grid-column: 1 / span 2;
-  } 
-
-  .cards > ul > li:first-of-type + li {
-    grid-column: 3 / span 3;
-    grid-row: 1 / span 2;
-  }
-
-  .cards > ul > li:first-of-type + li + li{
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-  }
-
-  .cards > ul > li:first-of-type + li + li + li{
-    grid-column: 3 / span 3; 
-    grid-row: 3 / span 1;
-  }
-
-  .cards > ul > li:first-of-type + li + li + li + li{
-    grid-column: 1 / span 3;
-    grid-row: 4 / span 1;
-  }
-
-  .cards > ul > li:first-of-type + li + li + li + li + li{
-    grid-column: 4 / span 2;
-  }
-
-  .cards > ul > li:first-of-type + li + li + li + li + li + li{
-    grid-column: 1 / span 3;
-  }
 }
 
 @media (width <= 959px) {
@@ -66,7 +32,7 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 3 / 1;
   object-fit: cover;
 }
 
