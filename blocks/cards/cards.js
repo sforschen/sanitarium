@@ -19,11 +19,28 @@ export default function decorate(block) {
           overlayText.textContent = 'EXPAND';
           div.appendChild(overlayText);
 
-          // Add click event listener to toggle expanded class and overlay text
-          div.addEventListener('click', () => {
+          // Function to handle click event
+          const handleClick = () => {
             div.classList.toggle('expanded');
             overlayText.textContent = div.classList.contains('expanded') ? 'CLOSE' : 'EXPAND';
-          });
+          };
+
+          // Add or remove event listeners based on screen size
+          const updateEventListeners = () => {
+            if (window.innerWidth > 640) {
+              div.addEventListener('click', handleClick);
+            } else {
+              div.removeEventListener('click', handleClick);
+              div.classList.add('expanded'); // Ensure expanded on mobile
+              overlayText.style.display = 'none'; // Hide overlay text on mobile
+            }
+          };
+
+          // Initial check
+          updateEventListeners();
+
+          // Update event listeners on window resize
+          window.addEventListener('resize', updateEventListeners);
         }
       } else {
         div.className = 'cards-card-body';
