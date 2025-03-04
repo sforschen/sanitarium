@@ -17,7 +17,7 @@ header nav {
   margin: auto;
   max-width: 1184px;
   height: var(--nav-height);
-  padding: var(--spc-m);
+  padding: var(--spc-s);
   font-family: var(--body-font-family);
 }
 
@@ -143,8 +143,9 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 header .nav-brand {
   grid-area: brand;
   flex-basis: auto;
-  font-size: var(--heading-font-size-l);
+  font-size: var(--heading-font-size-m);
   text-transform: uppercase;
+  letter-spacing: var(--spc-xs);
   color: var(--clr-white);
   line-height: 1;
 }

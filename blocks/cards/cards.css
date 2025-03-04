@@ -7,29 +7,6 @@
   grid-gap: var(--spc-m);
 }
 
-@media (max-width: 640px) {
-  .cards > ul > li {
-    grid-column: 1 / span all;
-  }
-
-  .cards .cards-card-image {
-    height: auto; /* Keep the image expanded */
-    transition: none; /* Disable transition */
-  }
-
-  .cards .cards-card-image::before {
-    display: none; /* Disable overlay */
-  }
-
-  .cards .overlay-text {
-    display: none; /* Disable overlay text */
-  }
-
-  .cards .cards-card-image.expanded {
-    height: auto; /* Keep the height fixed */
-  }
-}
-
 .cards > ul > li {
   border: 1px solid var(--clr-green);
   background-color: var(--background-color);

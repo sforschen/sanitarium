@@ -40,23 +40,23 @@
   --body-font-size-xl: 2rem;  
   --body-font-size-l: 1.75rem;  
   --body-font-size-m: 1.5rem; 
-  --body-font-size-s: 1.25rem;     /* 20px */
-  --body-font-size-xs: 1rem; 
+  --body-font-size-s: 1rem;     /* 20px */
+  --body-font-size-xs: .75rem; 
 
   /* heading sizes */
-  --heading-font-size-xxl: 3.5rem;
-  --heading-font-size-xl: 3.25rem;
-  --heading-font-size-l: 3rem;   /* 48px */
-  --heading-font-size-m: 2rem;    /* 32px */
-  --heading-font-size-s: 1.75rem;   /* 28px */
-  --heading-font-size-xs: 1.5rem; /* 24px */
+  --heading-font-size-xxl: 3rem;
+  --heading-font-size-xl: 2.5rem;
+  --heading-font-size-l: 2rem;   /* 48px */
+  --heading-font-size-m: 1.75rem;    /* 32px */
+  --heading-font-size-s: 1.5rem;   /* 28px */
+  --heading-font-size-xs: 1.25rem; /* 24px */
 
   /* misc. */
   --max-content-width: 80rem;      /* 1280px */
   --default-content-gap: 48px;
   --spc-xl: var(--default-content-gap);
-  --spc-l: 2rem; /* 32px */
-  --spc-m: 1.5rem; /* 24px */
+  --spc-l: 3rem; /* 32px */
+  --spc-m: 2rem; /* 24px */
   --spc-s: 1rem; /* 16px */
   --spc-xs: .5rem; /* 8px */
 
@@ -76,7 +76,7 @@ body {
   font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
-  line-height: 1.75;
+  line-height: 1.5;
   color: var(--text-color);
   background-color: var(--background-color);
   text-wrap: pretty;
@@ -96,7 +96,7 @@ h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 700;
   line-height: 1;
-  margin-bottom: var(--spc-m);
+  margin-bottom: var(--spc-s);
   margin-top: 0;
   scroll-margin: var(--spc-xl);
   text-wrap: balance;
