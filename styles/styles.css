@@ -60,6 +60,14 @@
   --spc-s: 1rem; /* 16px */
   --spc-xs: .5rem; /* 8px */
 
+    /* breakpoints */
+    --breakpoint-xxl: 36rem;
+    --breakpoint-xl: 30rem;
+    --breakpoint-l: 24rem;   /* 48px */
+    --breakpoint-m: 18rem;    /* 32px */
+    --breakpoint-s: 12rem;   /* 28px */
+    --breakpoint-xs: 6rem; /* 24px */
+
   /* nav height */
   --nav-height: auto;
 }
