@@ -60,13 +60,13 @@
   --spc-s: 1rem; /* 16px */
   --spc-xs: .5rem; /* 8px */
 
-    /* breakpoints */
-    --breakpoint-xxl: 36rem;
-    --breakpoint-xl: 30rem;
-    --breakpoint-l: 24rem;   /* 48px */
-    --breakpoint-m: 18rem;    /* 32px */
-    --breakpoint-s: 12rem;   /* 28px */
-    --breakpoint-xs: 6rem; /* 24px */
+  /* breakpoints */
+  --breakpoint-xxl: 36rem; /* 576px */
+  --breakpoint-xl: 30rem; /* 480px */
+  --breakpoint-l: 24rem;   /* 384px */
+  --breakpoint-m: 18rem;    /* 288px */
+  --breakpoint-s: 12rem;   /* 144px */
+  --breakpoint-xs: 6rem; /* 96px */
 
   /* nav height */
   --nav-height: auto;
