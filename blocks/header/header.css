@@ -240,9 +240,9 @@ header nav .nav-sections ul > li:last-child {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: var(--spc-m);
+    gap: var(--spc-s);
     margin: 0;
-    font-size: var(--body-font-size-s);
+    font-size: var(--body-font-size-m);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
