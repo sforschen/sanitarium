@@ -7,17 +7,14 @@ header .nav-wrapper {
 
 header nav {
   box-sizing: border-box;
-  display: grid;
-  grid-template:
-    'brand hamburger' var(--nav-height)
-    'sections sections' 1fr / auto;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0 var(--spc-m);
   margin: auto;
-  max-width: 1184px;
+  max-width: 1280px;
   height: var(--nav-height);
-  padding: var(--spc-s);
+  padding: var(--spc-s) var(--spc-l);
   font-family: var(--body-font-family);
 }
 
@@ -148,6 +145,29 @@ header .nav-brand {
   letter-spacing: var(--spc-xs);
   color: var(--clr-white);
   line-height: 1;
+  box-sizing: border-box;
+  margin-right: auto;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  font-size: 3rem;
+  color: transparent;
+  text-shadow:
+    6px 0px 0px var(--clr-white),
+    8px 0px 0px var(--clr-orange),
+    10px 0px 0px var(--clr-green),
+    12px 0px 0px var(--clr-light-blue);
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+}
+
+header .nav-brand:hover {
+  color: var(--clr-white);
+  font-weight: 300;
+  text-shadow: none;
 }
 
 header nav .nav-brand img {
@@ -162,8 +182,10 @@ header nav .nav-brand img {
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
+  margin-left: auto;
   flex: 1 auto 1;
-  display: none;
+  display: flex;
+  align-items: center;
   visibility: hidden;
   background-color: var(--overlay-color);
 }
