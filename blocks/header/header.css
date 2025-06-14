@@ -151,7 +151,6 @@ header .nav-brand {
   position: relative;
   z-index: 1;
   transition: all 0.5s;
-  font-size: 3rem;
   color: transparent;
   text-shadow:
     6px 0px 0px var(--clr-white),
@@ -159,8 +158,6 @@ header .nav-brand {
     10px 0px 0px var(--clr-green),
     12px 0px 0px var(--clr-light-blue);
   cursor: pointer;
-  z-index: 3;
-  position: relative;
   display: inline-block;
 }
 
