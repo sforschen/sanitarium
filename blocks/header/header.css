@@ -143,20 +143,19 @@ header .nav-brand {
   font-size: var(--heading-font-size-m);
   text-transform: uppercase;
   letter-spacing: var(--spc-xs);
-  color: var(--clr-white);
+  color: transparent;
   line-height: 1;
   box-sizing: border-box;
   margin-right: auto;
   height: auto;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   transition: all 0.5s;
-  color: transparent;
   text-shadow:
-    6px 0px 0px var(--clr-white),
-    8px 0px 0px var(--clr-orange),
-    10px 0px 0px var(--clr-green),
-    12px 0px 0px var(--clr-light-blue);
+    6px 0 0 var(--clr-white),
+    8px 0 0 var(--clr-light-blue),
+    10px 0 1px var(--clr-green),
+    12px 0 2px var(--clr-orange);
   cursor: pointer;
   display: inline-block;
 }
