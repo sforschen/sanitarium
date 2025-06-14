@@ -242,7 +242,7 @@ header nav .nav-sections ul > li:last-child {
     display: flex;
     gap: var(--spc-m);
     margin: 0;
-    font-size: var(--body-font-size-m);
+    font-size: var(--body-font-size-s);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
