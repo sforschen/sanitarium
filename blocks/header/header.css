@@ -182,7 +182,7 @@ header nav .nav-sections ul  {
 
 header nav .nav-sections ul > li {
   color: var(--clr-white);
-  padding-right: var(--spc-m);
+  padding-right: var(--spc-s);
   border-right: 2px solid var(--clr-white);
 }
 
