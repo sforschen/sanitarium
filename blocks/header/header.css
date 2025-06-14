@@ -214,7 +214,7 @@ header nav .nav-sections ul > li:last-child {
 
   header nav .nav-sections .nav-drop {
     position: relative;
-    padding-right: 16px;
+    padding-right: var(--spc-s);
     cursor: pointer;
   }
 
