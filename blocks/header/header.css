@@ -26,10 +26,9 @@ header nav[aria-expanded="true"] {
     'brand hamburger' var(--nav-height)
     'sections sections' 1fr;
   overflow-y: auto;
-  min-height: 120vh;
 }
 
-@media (width >= 820px) {
+@media (width >= 900px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -124,14 +123,14 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-@media (width >= 820px) {
+@media (width >= 900px) {
   header nav .nav-hamburger {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (width <= 820px) {
+@media (width <= 900px) {
   header nav .nav-sections ul > li {
     color: var(--clr-white);
     padding-top: var(--spc-m);
@@ -192,6 +191,7 @@ header nav[aria-expanded="true"] .nav-sections {
   display: block;
   visibility: visible;
   align-self: self-start;
+  overflow: hidden;
 }
 
 header nav .nav-sections ul  {
@@ -221,7 +221,7 @@ header nav .nav-sections ul > li:last-child {
   padding-right: 0;
 }
 
-@media (width >= 821px) {
+@media (width >= 901px) {
   header nav .nav-sections {
     display: block;
     visibility: visible;
