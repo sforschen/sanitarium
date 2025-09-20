@@ -79,6 +79,13 @@ export default function decorate(block) {
       } else {
         div.className = 'cards-card-body';
       }
+      // Make links to images and PDFs open in a new tab
+      div.querySelectorAll('a').forEach((a) => {
+        if (/\.(pdf|jpe?g|png|gif|webp|svg)$/i.test(a.href)) {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
     });
     ul.append(li);
   });
