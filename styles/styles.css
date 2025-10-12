@@ -43,33 +43,33 @@
   --body-font-size-xl: 2rem;  
   --body-font-size-l: 1.75rem;  
   --body-font-size-m: 1.5rem; 
-  --body-font-size-s: 1rem;     /* 20px */
+  --body-font-size-s: 1rem; 
   --body-font-size-xs: .75rem; 
 
   /* heading sizes */
   --heading-font-size-xxl: 3rem;
   --heading-font-size-xl: 2.5rem;
-  --heading-font-size-l: 2rem;   /* 48px */
-  --heading-font-size-m: 1.75rem;    /* 32px */
-  --heading-font-size-s: 1.5rem;   /* 28px */
-  --heading-font-size-xs: 1.25rem; /* 24px */
+  --heading-font-size-l: 2rem;   
+  --heading-font-size-m: 1.75rem;    
+  --heading-font-size-s: 1.5rem;   
+  --heading-font-size-xs: 1.25rem; 
 
   /* misc. */
-  --max-content-width: 80rem;      /* 1280px */
+  --max-content-width: 80rem;      
   --default-content-gap: 48px;
   --spc-xl: var(--default-content-gap);
-  --spc-l: 3rem; /* 32px */
-  --spc-m: 2rem; /* 24px */
-  --spc-s: 1rem; /* 16px */
-  --spc-xs: .5rem; /* 8px */
+  --spc-l: 3rem; 
+  --spc-m: 2rem; 
+  --spc-s: 1rem; 
+  --spc-xs: .5rem; 
 
   /* breakpoints */
-  --breakpoint-xxl: 36rem; /* 576px */
-  --breakpoint-xl: 30rem; /* 480px */
-  --breakpoint-l: 24rem;   /* 384px */
-  --breakpoint-m: 18rem;    /* 288px */
-  --breakpoint-s: 12rem;   /* 144px */
-  --breakpoint-xs: 6rem; /* 96px */
+  --breakpoint-xxl: 36rem; 
+  --breakpoint-xl: 30rem;
+  --breakpoint-l: 24rem;  
+  --breakpoint-m: 18rem;  
+  --breakpoint-s: 12rem;   
+  --breakpoint-xs: 6rem; 
 
   /* nav height */
   --nav-height: auto;
