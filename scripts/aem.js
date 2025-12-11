@@ -99,7 +99,7 @@ function sampleRUM(checkpoint, data = {}) {
           },
           knownProperties,
         );
-        const url = `https://rum.hlx.page/.rum/${weight}`;
+        const url = `https://rum.aem.page/.rum/${weight}`;
         // eslint-disable-next-line no-unused-expressions
         navigator.sendBeacon(url, body);
         // eslint-disable-next-line no-console
@@ -110,7 +110,7 @@ function sampleRUM(checkpoint, data = {}) {
         lazy: () => {
           // use classic script to avoid CORS issues
           const script = document.createElement('script');
-          script.src = 'https://rum.hlx.page/.rum/@adobe/helix-rum-enhancer@^1/src/index.js';
+          script.src = 'https://rum.aem.page/.rum/@adobe/helix-rum-enhancer@^1/src/index.js';
           document.head.appendChild(script);
           return true;
         },

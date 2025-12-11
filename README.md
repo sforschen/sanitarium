@@ -2,8 +2,8 @@
 www.youneedserenity.com
 
 ## Environments
-- Preview: https://main--sanitarium--sforschen.hlx.page/
-- Live: https://main--sanitarium--sforschen.hlx.live/
+- Preview: https://main--sanitarium--sforschen.aem.page/
+- Live: https://main--sanitarium--sforschen.aem.live/
 
 ## Installation
 

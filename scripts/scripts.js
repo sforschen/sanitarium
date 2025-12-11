@@ -111,7 +111,7 @@ function getDisplayFileTypeFromUrl(url) {
 }
 
 export function decorateLinks(element) {
-  const hosts = ['localhost', 'hlx.page', 'hlx.live', 'youneedserenity.com'];
+  const hosts = ['localhost', 'aem.page', 'aem.live', 'youneedserenity.com'];
   element.querySelectorAll('a').forEach((a) => {
     try {
       if (a.href) {
